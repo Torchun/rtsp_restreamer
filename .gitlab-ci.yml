@@ -1,0 +1,40 @@
+stages:
+  - test
+#  - build
+#  - deploy
+
+test:
+  stage: test
+  tags:
+    - runner_tag
+  script: 
+    - hostname
+    - cat /etc/issue
+    - uname -a
+    - echo "Running tests"
+    - python --version
+
+#build:
+#  stage: build
+#  script: echo "Building the app"
+
+#deploy_staging:
+#  stage: deploy
+#  script:
+#    - echo "Deploy to staging server"
+#  environment:
+#    name: staging
+#    url: https://staging.example.com
+#  only:
+#    - master
+
+#deploy_prod:
+#  stage: deploy
+#  script:
+#    - echo "Deploy to production server"
+#  environment:
+#    name: production
+#    url: https://example.com
+#  when: manual
+#  only:
+#    - master
