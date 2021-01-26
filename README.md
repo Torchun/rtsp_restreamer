@@ -1,12 +1,12 @@
 ## View stream from Docker container
 ### RTSP (H.264)
 `vlc rtsp://127.0.0.1:9950/live/cam_1080.rtsp`
-
+<br>
 `vlc rtsp://127.0.0.1:9950/live/cam_720.rtsp`
  
 ### JPG:
 `http://127.0.0.1:9951/live/cam_1080_10fps.jpg`
-
+<br>
 `http://127.0.0.1:9951/live/cam_720_10fps.jpg`
 
 Build docker image:
